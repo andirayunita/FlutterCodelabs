@@ -8,8 +8,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider (
@@ -164,7 +163,7 @@ class FavoritesPage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(20),
-          child: Text('You have' '${appState.favorites.length} favorites.'),
+          child: Text('You have' ' ${appState.favorites.length} favorites.'),
         ),
 
         for (var pair in appState.favorites)
